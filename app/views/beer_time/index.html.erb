@@ -1,0 +1,26 @@
+<div class="section group">
+<div class="col span_3_of_8">
+  <%= image_tag('logo.png') %>
+  <div class="center">
+  <a class="btn" href="index.html">Another One!</a>
+</div>
+</div>
+<div class="col span_5_of_8" id="divright">
+  <div id="inside">
+    <h1><%= @randombeer['data']['name'] rescue " " %></h1>
+    <h2><%= @randombeer['data']['style']['name'] rescue " " %></h2>
+    <p><%= @randombeer['data']['description'] rescue " " %></p>
+    <%= image_tag(@randombeer['data']['labels']['large']) rescue " " %>
+    <p><%= @randombeer['data']['available']['description'] rescue " " %></p>
+    <p>ABV: <%= @randombeer['data']['abv'] rescue "not listed" %></p>
+    <p>Glassware: <%= @randombeer['data']['glass']['name'] rescue "not listed" %></p>
+    <p class="other"><%= @randombeer['data']['style']['description'] rescue " " %></p>
+  </div>
+</div>
+</div>
+<div class="center">
+<a class="btn" href="index.html">Another One!</a>
+</div>
+<p class="small">powered by</p>
+<%= image_tag('bdblogo.png') %>
+<
