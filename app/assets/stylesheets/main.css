@@ -108,6 +108,12 @@ body {
     display: block;
    }
 
+   .imgbrewery {
+   margin-top: 20px;
+   margin-left: 0;
+   margin-right: 20px;
+   }
+
 /* ==========================================================================
    Links
    ========================================================================== */
@@ -142,31 +148,37 @@ a:hover {
 h1 {
     font-family: 'League Gothic', sans-serif;
     font-size: 4em;
-    margin: 0.67em 0;
     text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 h2 {
     font-family: 'League Gothic', sans-serif;
-    font-size: 2em;
-    margin: 0.83em 0;
+    font-size: 2.5em;
+    margin-top: 0.5em;
+    margin-bottom: 0;
 }
 
 h3 {
-  font-family: 'Roboto Condensed', sans-serif;
-    font-size: 1.17em;
+  font-family: 'League Gothic', sans-serif;
+    font-size: 1.75em;
     font-weight: 400;
-    margin: 1em 0;
+    margin-top: 0em;
+    margin-bottom: 0em;
 }
 
 h4 {
-    font-size: 1em;
-    margin: 1.33em 0;
+    font-family: 'League Gothic', sans-serif;
+    font-size: 1.5em;
+    margin-top: 1em;
+    margin-bottom: 0em;
+
 }
 
 h5 {
     font-size: 0.83em;
-    margin: 1.67em 0;
+    margin: 0;
 }
 
 h6 {
@@ -188,7 +200,9 @@ abbr[title] {
 
 b,
 strong {
-    font-weight: bold;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-family: 'Roboto Slab', serif;
 }
 
 blockquote {
@@ -638,7 +652,7 @@ table {
 }
 
 #divright {
-  background:rgba(255,255,255,0.66);
+  background:rgba(255,255,255,0.60);
 }
 
 #inside {

@@ -1,6 +1,11 @@
 <div class="section group">
 <div class="col span_3_of_8">
   <%= image_tag('logo.png') %>
+  <div class="center">
+  <a class="btn" href="index.html">Another One!</a>
+  </div>
+  <p class="small">powered by</p>
+  <%= image_tag('bdblogo.png') %><br />
 </div>
 <div class="col span_5_of_8" id="divright">
   <div id="inside">
@@ -14,16 +19,11 @@
       <%= @randombeer['data']['breweries'][0]['locations'][0]['country']['displayName'] rescue " " %></strong><p></p>
     <%= image_tag(@randombeer['data']['labels']['large']) rescue " " %>
     <p></p><strong>ABV: <%= @randombeer['data']['abv'] rescue "not listed" %></strong><p></p>
-    <strong>Glassware: <%= @randombeer['data']['glass']['name'] rescue "Whatever You Want" %></strong><p></p>
+    <strong>Glassware: <%= @randombeer['data']['glass']['name'] rescue "Not Specified" %></strong><p></p>
     <strong><%= @randombeer['data']['available']['description'] rescue " Not Available" %></strong><p></p>
     <strong>About <%= @randombeer['data']['style']['name'] rescue " " %>:</strong>
-    <p><%= @randombeer['data']['style']['description'] rescue " " %></p>
+    <p><%= @randombeer['data']['style']['description'] rescue " " %></p><br />
 
   </div>
 </div>
 </div>
-<div class="center">
-<a class="btn" href="index.html">Another One!</a>
-</div>
-<p class="small">powered by</p>
-<%= image_tag('bdblogo.png') %>
